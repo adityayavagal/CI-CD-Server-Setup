@@ -26,4 +26,30 @@ Alternatively, to enter psql Shell directly
 ```bash
 sudo -u postgres psql
 ```
+#### Note: 
+1. For Postgres Tutorials Follow This [Link](https://www.tutorialspoint.com/postgresql)
+2. For Accessing Postgres remotely Follow This [Link](https://blog.bigbinary.com/2016/01/23/configure-postgresql-to-allow-remote-connection.html)
 
+### Step 3 - Creating our Sonarqube db user
+
+First Enter postgres user, Create user using following command
+```bash
+createuser sonarqube
+```
+Next, Enter psql Shell with psql command and Create password and database for the user
+```bash
+ALTER USER sonar WITH ENCRYPTED password 'password';
+CREATE DATABASE sonar OWNER sonar;
+```
+and quit shell by typing
+```bash
+\q
+```
+
+## Installing and Configuring SonarQube
+First, Create a ubuntu user with name sonar
+```bash
+sudo adduser sonar
+```
+
+Next, Download the Latest SonarQube(LTS versions are recommended)
