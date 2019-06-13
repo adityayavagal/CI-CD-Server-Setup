@@ -47,9 +47,84 @@ and quit shell by typing
 ```
 
 ## Installing and Configuring SonarQube
-First, Create a ubuntu user with name sonar
+
+
+### Step 1 - Create a ubuntu user with name sonar
 ```bash
 sudo adduser sonar
 ```
+### Step 2 - Download the Latest SonarQube(LTS versions are recommended)
+#### Note:
+While installing this software current LTS version v6.7 was going obsolete and was going to be replaced by v7.9 so we are going installed v7.7 (please check the latest LTS version and release notes before installation)
+```bash
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.7.zip
+```
+### Step 3 - Unzip file
+```bash
+unzip sonarqube-7.7.zip
+```
+### Step 4 - Copy extracted folder to /opt Folder
+```bash
+sudo cp -r sonarqube-7.7 /opt/sonarqube
+```
+### Step 5 - Change ownership of the folder
+```bash
+sudo chown -R sonar:sonar /opt/sonarqube
+```
+### Step 6 - To run SonarQube you need configure this file
+```bash
+sudo nano /opt/sonarqube/bin/linux-x86-64/sonar.sh
+```
+and find ```bash RUN_AS_USER=sonar``` and make sure it's not commented and the username you created before if not enter the user you create
 
-Next, Download the Latest SonarQube(LTS versions are recommended)
+### Step 7 - Configuring SonarQube Database configurations
+```bash
+sudo nano /opt/sonarqube/conf/sonar.properties
+```
+and make following changes
+```bash
+sonar.jdbc.username={sonarqubeDBUser}
+sonar.jdbc.password={SonarqubeDBUserPassword}
+sonar.jdbc.url=jdbc:postgresql://localhost/{DBforSonarQube}
+sonar.web.host=127.0.0.1
+sonar.search.javaOpts=-Xms512m  -Xmx512m
+```
+### Step 8 - Create a Service file for SonarQube
+Create Service file to manage SonarQube service
+```bash
+sudo nano /etc/systemd/system/sonar.service
+```
+Enter the following lines:
+```bash
+[Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+User=sonar
+Group=sonar
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+save and close, start and enable the service with following command
+```bash
+sudo systemctl start sonar
+sudo systemctl enable sonar
+```
+You can check the status by following command
+```bash
+sudo systemctl status sonar
+```
+now, you can access sonaqube from 127.0.0.1:9000 or youripaddress:9000
+#### Note: If you can't access the SonarQube please check for log files in /opt/sonarqube/logs folder has logs of everything
+
+#### References:
+\[1\] [https://www.howtoforge.com/how-to-install-sonarqube-on-ubuntu-1804/](https://www.howtoforge.com/how-to-install-sonarqube-on-ubuntu-1804/)  
+\[2\] [https://docs.sonarqube.org/latest/setup/install-server/](https://docs.sonarqube.org/latest/setup/install-server/)
