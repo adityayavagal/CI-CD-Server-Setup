@@ -67,5 +67,6 @@ By default the nexus server runs on 8081 port you can go to browser and access b
 #### Note: When you access the server for the first time you should login using default username and password 
 ```bash
 Username: admin
+Password: Stored in <yourInstallationDir>/sonatype-work/nexus3/admin.password
 ```
 #### Password will be stored in \<nexusDir>/sonatype-work/nexus3/admin.password copy its contents in passowrd file and you will be logged in
