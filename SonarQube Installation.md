@@ -38,8 +38,8 @@ createuser sonarqube
 ```
 Next, Enter psql Shell with psql command and Create password and database for the user
 ```bash
-ALTER USER sonar WITH ENCRYPTED password 'password';
-CREATE DATABASE sonar OWNER sonar;
+ALTER USER sonarqube WITH ENCRYPTED password 'password';
+CREATE DATABASE sonar OWNER sonarqube;
 ```
 and quit shell by typing
 ```bash
