@@ -70,3 +70,5 @@ Username: admin
 Password: Stored in <yourInstallationDir>/sonatype-work/nexus3/admin.password
 ```
 #### Password will be stored in \<nexusDir>/sonatype-work/nexus3/admin.password copy its contents in password file and you will be logged in
+
+**Note:** For tutorials related to nexus repository follow this [link](https://help.sonatype.com/learning/repository-manager-3/first-time-installation-and-setup)
