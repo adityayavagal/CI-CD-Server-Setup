@@ -31,7 +31,7 @@ mkdir -p /var/lib/gitea/{custom,data,log}
 chown -R gitea:gitea /var/lib/gitea/
 chmod -R 750 /var/lib/gitea/
 mkdir /etc/gitea
-chown root:git /etc/gitea
+chown root:gitea /etc/gitea
 chmod 770 /etc/gitea
 ```
 ### Step 4: Copy gitea binary to Global Location
