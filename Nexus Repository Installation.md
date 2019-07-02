@@ -71,6 +71,6 @@ Password: Stored in <yourInstallationDir>/sonatype-work/nexus3/admin.password
 ```
 #### Password will be stored in \<nexusDir>/sonatype-work/nexus3/admin.password copy its contents in password file and you will be logged in
 
-**Note:** For tutorials related to nexus repository follow this [link](https://help.sonatype.com/learning/repository-manager-3/first-time-installation-and-setup)..
-For Nuget repository management follow this [link](https://help.sonatype.com/repomanager3/formats/nuget-repositories)..
-For any further doubts or research read the [documentation](https://help.sonatype.com/repomanager3)..
+**Note:** For tutorials related to nexus repository follow this [link](https://help.sonatype.com/learning/repository-manager-3/first-time-installation-and-setup)
+\For Nuget repository management follow this [link](https://help.sonatype.com/repomanager3/formats/nuget-repositories)
+\For any further doubts or research read the [documentation](https://help.sonatype.com/repomanager3)
