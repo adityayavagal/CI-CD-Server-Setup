@@ -34,7 +34,7 @@ sudo -u postgres psql
 
 First Enter postgres user, Create user using following command
 ```bash
-createuser sonarqube
+create user sonarqube
 ```
 Next, Enter psql Shell with psql command and Create password and database for the user
 ```bash
