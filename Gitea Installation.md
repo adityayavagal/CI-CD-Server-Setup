@@ -42,7 +42,7 @@ cp gitea /usr/local/bin/gitea
 ```bash
 sudo vim /etc/systemd/system/gitea.service
 ```
-copy sample [gitea.service]()
+copy sample [gitea.service](https://github.com/adityayavagal/CI-CD-Server-Setup/blob/master/gitea.service)
 
 ### Step 6: Enable and start gitea service
 ```bash
