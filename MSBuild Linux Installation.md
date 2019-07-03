@@ -21,3 +21,6 @@ sudo apt install nuget
 nuget update -self
 ```
 
+**References**
+- [Mono-Project](https://www.mono-project.com/docs/)
+- [Nuget Tutorial](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)
