@@ -13,3 +13,11 @@ sudo apt update
 ```bash
 sudo apt install mono-devel
 ```
+
+## Install Nuget Package Manager (Optional)
+
+```bash
+sudo apt install nuget
+nuget update -self
+```
+
