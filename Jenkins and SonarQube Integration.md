@@ -29,6 +29,6 @@
    chmod +x /opt/SonarScanner.MSBuild/SonarScanner.MSBuild.exe
    ```
  - and save the settings<br/>
-**NOTE:** 
+## NOTE:
  - For SonarScanner for MSBuild make sure you have installed latest mono-devel and nuget
  - Also make sure for all these folders sonarqube user is owner
