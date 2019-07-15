@@ -30,6 +30,6 @@
    ```
  - and save the settings<br/>
 ## NOTE:
- - For SonarScanner for MSBuild make sure you have installed latest mono-devel and nuget
+ - For SonarScanner for MSBuild make sure you have installed latest mono-devel and nuget, For mono installation go through this [doc](https://github.com/adityayavagal/CI-CD-Server-Setup/blob/master/MSBuild%20Linux%20Installation.md)
  - Also make sure for all these folders sonarqube user is owner
  - For more information read [SonarQube Doc](https://docs.sonarqube.org/latest/) and for video tutorial try [youtube](https://youtu.be/jh7utASgKj4)
