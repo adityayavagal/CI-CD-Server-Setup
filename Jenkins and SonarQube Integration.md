@@ -18,7 +18,7 @@
    mv sonar-scanner-cli-4.0.0.1744-linux /opt/sonarscanner
    sudo ln -s /opt/sonarscanner/sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
    ```
- - Then, Go to Configure Global Tools and Search for SonarQube Scanner and click on  add a sonarqube scanner installation give name and uncheck install automatically and input the path of the installed sonarqube scanner path **ie:/opt/sonarscanner/sonar-scanner-4.0.0.1744-linux/**
+ - Then, Go to Configure Global Tools and Search for SonarQube Scanner and click on  add a sonarqube scanner installation give name and uncheck install automatically and input the path of the installed sonarqube scanner path **ex:/opt/sonarscanner/sonar-scanner-4.0.0.1744-linux/**
  - and save the settings
  
 ## Step 4: Configuring SonarScanner MSBuild Installation
