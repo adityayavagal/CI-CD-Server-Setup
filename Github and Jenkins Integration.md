@@ -41,3 +41,4 @@
   - Make sure your jenkins instance has public ip or is exposed to a domain name in order to integrate with github
   - Adding SSH key section is only mandatory when you are working with private repositories
   - Make sure all the above github procedures are done by the project owner or admin of the project in github
+  - References [link1](https://youtu.be/Z3S2gMBUkBo) [link2](https://youtu.be/HTlAssPBKBs)
