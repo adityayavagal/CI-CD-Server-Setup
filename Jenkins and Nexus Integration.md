@@ -18,4 +18,4 @@
   - In File Enter the path to your Artifact
   - Save the changes to job
 
-**Plugin**[Nexus Artifact uploader](https://wiki.jenkins.io/display/JENKINS/Nexus+Artifact+Uploader)
+**Plugin** [Nexus Artifact uploader](https://wiki.jenkins.io/display/JENKINS/Nexus+Artifact+Uploader)
