@@ -17,3 +17,5 @@
   - In type Enter the file type you want to upload
   - In File Enter the path to your Artifact
   - Save the changes to job
+
+**Plugin**[Nexus Artifact uploader](https://wiki.jenkins.io/display/JENKINS/Nexus+Artifact+Uploader)
