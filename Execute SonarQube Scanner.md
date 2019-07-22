@@ -7,5 +7,5 @@
 ## For MSBuild Projects
   - In build section click on build step and add **SonarScanner for MSBuild - Begin Analysis**
   - Enter the project key and name you created in SonarQube and enter the project version
-  - Next, click build step and add execute shell and enter ```bash msbuild /t:rebuild```
+  - Next, click build step and add execute shell and enter ```msbuild /t:rebuild```
   - Next, click build step and add **SonarScanner for MSBuild - End Analysis**
